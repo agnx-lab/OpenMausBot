@@ -1,0 +1,10 @@
+{
+  "appId": "openmausbot",
+  "installState": "installed",
+  "launchMode": "packaged",
+  "source": {
+    "kind": "github",
+    "url": "https://github.com/milind-soni/OpenMausBot"
+  },
+  "updatedAt": "2026-09-27T01:03:12.273Z"
+}

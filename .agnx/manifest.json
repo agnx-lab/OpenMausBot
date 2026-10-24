@@ -1,0 +1,37 @@
+{
+  "id": "openmausbot",
+  "name": "OpenMausBot",
+  "version": "0.1.0",
+  "description": "Agnx 外置子应用：OpenMausBot 整仓 + harness sidecar + Guest",
+  "engines": {
+    "agnx": ">=1.0.0"
+  },
+  "main": "./dist/index.js",
+  "icon": "./public/app-icon.svg",
+  "sidecar": {
+    "supervised": true,
+    "ensureTool": ".agnx/tools/ensure-openmausbot.mjs",
+    "stateFile": "openmausbot.json",
+    "defaultPort": 8799,
+    "lifecycle": "lazy"
+  },
+  "guest": {
+    "kind": "web",
+    "auth": "none",
+    "preferStrategy": "auto"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "id": "openmausbot.open",
+        "title": "OpenMausBot"
+      }
+    ],
+    "panels": [
+      {
+        "id": "openmausbot.main",
+        "title": "OpenMausBot"
+      }
+    ]
+  }
+}
