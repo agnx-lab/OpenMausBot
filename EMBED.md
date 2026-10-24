@@ -1,6 +1,6 @@
 ## 上游嵌入
 
-- 上游：milind-soni/OpenMausBot@5e5f5dc（fork：`agnx-lab/OpenMausBot`，`merge-upstream` 跟随）
+- 上游基线：milind-soni/OpenMausBot@f2f3a62（fork：`agnx-lab/OpenMausBot`，**固定在此节点，不跟随上游最新**）
 - 上游原生平台：桌面 ✅ | 网页 ✅ | 移动 ❌（依据：Vite Web UI + Electron 打包脚本）
 - 工作方式：整仓魔改（真树 `$AGNX_HOME/apps/openmausbot`，排除 `enterprise/`）
 - 推荐模式：Wrap + Sidecar + Guest（`auth: none` → `direct-iframe`）
